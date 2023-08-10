@@ -49,7 +49,7 @@
 				display: none;
 			}
 			svg {
-				color: $black--two;
+				color: $white;
 			}
 		}
 	}
@@ -97,7 +97,7 @@
 	}
 
 	&--custom-width {
-		max-width: 370px;
+		max-width: 285px;
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -126,8 +126,8 @@
 			content: "";
 			transition: 0.6s;
 
-			opacity: 0;
-			border: 1px solid $white;
+			opacity: 100%;
+			//border: 1px solid $white;
 			background-color: transparent;
 		}
 
@@ -188,7 +188,7 @@
 				transform: translateY(0);
 
 				opacity: 1;
-				color: $black--two;
+				color: $white;
 			}
 
 			a {
@@ -206,7 +206,7 @@
 				transform: translateY(60%);
 
 				opacity: 0;
-				color: $red--one;
+				color: $white;
 
 @include respond(large-desktop) {
 					font-size: 22px;
@@ -298,7 +298,7 @@
 					transform: translateY(0);
 
 					opacity: 1;
-					color: $black--two;
+					color: $white;
 				}
 			}
 		}
@@ -325,7 +325,7 @@
 				p {
 					font-size: 34px;
 
-					color: $black--two;
+					color: $white;
 
 @include respond(small-desktop) {
 						font-size: 24px;
@@ -362,7 +362,7 @@
 							transform: translateY(0);
 							text-transform: capitalize;
 
-							color: $black--two;
+							color: $white;
 
 @include respond(large-desktop) {
 								font-size: 25px;
@@ -380,7 +380,7 @@
 							}
 
 							&:hover {
-								color: $black--two;
+								color: $white;
 							}
 						}
 					}
@@ -396,10 +396,10 @@
 						text-transform: uppercase;
 
 						opacity: 1;
-						color: $black--two;
+						color: $white;
 
 						&:hover {
-							color: $red--one;
+							color: $white;
 						}
 					}
 				}
@@ -458,7 +458,7 @@
 					& > a {
 						line-height: 22px;
 
-						border-bottom: 1px solid $black--two;
+						border-bottom: 1px solid $white;
 
 @include respond(extra-large-mobile) {
 							font-size: 12px;
@@ -466,7 +466,7 @@
 						}
 
 						&:hover {
-							border-color: $red--one;
+							border-color: $white;
 						}
 					}
 				}
@@ -501,11 +501,11 @@
 				top: 30px;
 				right: 40px;
 
-				color: $black--two;
+				color: $white;
 
 
 				&:hover {
-					color: $red--one;
+					color: $white;
 				}
 			}
 
@@ -519,7 +519,7 @@
 
 					display: block;
 
-					color: $black--two;
+					color: $white;
 
 @include respond(large-desktop) {
 						font-size: 42px;
@@ -563,6 +563,18 @@
 		.single-category__image {
 			img {
 				transform: scale(1.1);
+			}
+
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+				pointer-events: none;
 			}
 
 			&:after {
@@ -648,7 +660,7 @@
 
 			letter-spacing: 1px;
 
-			color: $black--two;
+			color: $white;
 		}
 	}
 
@@ -665,7 +677,7 @@
 				font-weight: 400;
 				line-height: 28px;
 
-				color: $black--two;
+				color: $white;
 			}
 
 			&.price {
@@ -673,7 +685,7 @@
 				font-weight: 700;
 				line-height: 28px;
 
-				color: $black--two;
+				color: $white;
 
 				.discounted {
 					font-size: 12px;

@@ -1,26 +1,18 @@
 [
   {
     "id": "1",
-    "subtitle": "STOP & WEAR",
-    "title": "Summer Flowers",
+    "subtitle": "New 2023",
+    "title": "Custom Trainers",
     "url": "/shop/left-sidebar",
-    "image": "",
-    "bgImage": "/assets/images/hero-slider/hero-slider-three/bg1.png"
+    "image": "/assets/images/hero-slider/trainer-transparent-left.png",
+    "bgImage": "/assets/images/hero-slider/bg2.png"
   },
   {
     "id": "2",
-    "subtitle": "NEW ARRIVALS",
-    "title": "Summer 2020",
+    "subtitle": "New 2023",
+    "title": "Custom Trainers",
     "url": "/shop/left-sidebar",
-    "image": "/assets/images/hero-slider/hero-slider-three/1.png",
-    "bgImage": "/assets/images/hero-slider/hero-slider-three/bg2.png"
-  },
-  {
-    "id": "3",
-    "subtitle": "NEW ARRIVALS",
-    "title": "Summer 2020",
-    "url": "/shop/left-sidebar",
-    "image": "/assets/images/hero-slider/hero-slider-three/2.png",
-    "bgImage": "/assets/images/hero-slider/hero-slider-three/bg3.png"
+    "image": "/assets/images/hero-slider/trainer2-transparent.png",
+    "bgImage": "/assets/images/hero-slider/bg3.png"
   }
 ]

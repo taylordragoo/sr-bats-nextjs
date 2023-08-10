@@ -5,6 +5,7 @@ import CategoryGridThree from "./CategoryGridThree";
 import CategoryGridFour from "./CategoryGridFour";
 import CategoryGridFive from "./CategoryGridFive";
 import CategoryGridSix from "./CategoryGridSix";
+import SrBatsCategoryGrid from "./SrBatsCategoryGrid";
 
 export {
   CategorySlider,
@@ -13,5 +14,6 @@ export {
   CategoryGridThree,
   CategoryGridFour,
   CategoryGridFive,
-  CategoryGridSix
+  CategoryGridSix,
+  SrBatsCategoryGrid
 };

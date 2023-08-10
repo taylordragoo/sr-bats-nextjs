@@ -10,6 +10,7 @@ import HeroSliderNine from "./HeroSliderNine";
 import HeroSliderTen from "./HeroSliderTen";
 import HeroSliderEleven from "./HeroSliderEleven";
 import HeroSliderTwelve from "./HeroSliderTwelve";
+import SrBatsHeroSlider from "./SrBatsHeroSlider";
 
 export {
   HeroSliderOne,
@@ -23,5 +24,6 @@ export {
   HeroSliderNine,
   HeroSliderTen,
   HeroSliderEleven,
-  HeroSliderTwelve
+  HeroSliderTwelve,
+  SrBatsHeroSlider
 };

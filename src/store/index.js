@@ -6,12 +6,14 @@ import productReducer from './slices/product-slice';
 import cartReducer from './slices/cart-slice';
 import wishlistReducer from './slices/wishlist-slice';
 import compareReducer from './slices/compare-slice';
+import userReducer from './slices/user-slice';
 
 const combinedReducer = combineReducers({
     product: productReducer,
     cart: cartReducer,
     wishlist: wishlistReducer,
-    compare: compareReducer
+    compare: compareReducer,
+    user: userReducer
 })
 
 const makeStore = ({ isServer }) => {
@@ -27,25 +29,25 @@ const makeStore = ({ isServer }) => {
     } else {
       //If it's on client side, create a store which will persist
         const { persistStore, persistReducer } = require('redux-persist');
-    
+
         const persistConfig = {
             key: 'lezada',
-            storage, 
+            storage,
             blacklist: ['product'],
         };
-    
+
         const persistedReducer = persistReducer(persistConfig, combinedReducer); // Create a new reducer with our existing reducer
-    
+
         const store = configureStore({
             reducer: persistedReducer,
             middleware: (getDefaultMiddleware) => getDefaultMiddleware({
                 serializableCheck: false
             }),
             devTools: true,
-        }); // Creating the store again  
-    
+        }); // Creating the store again
+
         store.__persistor = persistStore(store); // This creates a persistor object & push that persisted object to .__persistor, so that we can avail the persistability feature
-    
+
         return store;
     }
 };

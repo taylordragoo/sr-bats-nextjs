@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { useSelector } from "react-redux";
 import { getDiscountPrice } from "../../lib/product";
 import ProductGridFour from "./ProductGridFour";
+import SrBatsProductGrid from "./SrBatsProductGrid";
 
 const ProductGridFourWrapper = ({
   products,
@@ -32,7 +33,7 @@ const ProductGridFourWrapper = ({
           );
 
           return (
-            <ProductGridFour
+            <SrBatsProductGrid
               key={product.id}
               product={product}
               discountedPrice={discountedPrice}

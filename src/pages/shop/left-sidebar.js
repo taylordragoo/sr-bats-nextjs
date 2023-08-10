@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { Container, Row, Col } from "react-bootstrap";
 import Paginator from "react-hooks-paginator";
 import { SlideDown } from "react-slidedown";
-import { LayoutTwo } from "../../components/Layout";
+import { SrBatLayout } from "../../components/Layout";
 import { BreadcrumbOne } from "../../components/Breadcrumb";
 import Anchor from "../../components/anchor";
 import {
@@ -57,7 +57,7 @@ const LeftSidebar = () => {
   }, [offset, products, sortType, sortValue, filterSortType, filterSortValue]);
 
   return (
-    <LayoutTwo>
+    <SrBatLayout>
       {/* breadcrumb */}
       <BreadcrumbOne
         pageTitle="Shop Left Sidebar"
@@ -127,7 +127,7 @@ const LeftSidebar = () => {
           </Container>
         </div>
       </div>
-    </LayoutTwo>
+    </SrBatLayout>
   );
 };
 

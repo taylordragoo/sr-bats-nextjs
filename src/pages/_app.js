@@ -12,7 +12,7 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import 'swiper/swiper-bundle.min.css';
 import "../assets/scss/styles.scss";
-
+import {getAllProducts} from "./api/products";
 
 const workSans = Work_Sans({
   weight: ["300", "400", "500", "600", "700"],
@@ -24,14 +24,15 @@ const workSans = Work_Sans({
 const MyApp = ({Component, ...rest}) => {
   const {store, props} = wrapper.useWrappedStore(rest);
   useEffect(() => {
-    store.dispatch(setProducts(products));
+      store.dispatch(setProducts(products));
+      // getAllProducts().then((result) => store.dispatch(setProducts(result.data.products.edges))).catch((error) => console.error(error))
   }, []);
 
   return (
     <Fragment>
       <Head>
-        <title>Lezada | React Next JS Multipurpose eCommerce Template</title>
-        <link rel="icon" href={process.env.PUBLIC_URL + "/favicon.ico"} />
+        <title>SR Bats</title>
+        <link rel="icon" href="https://cdn.shopify.com/s/files/1/0413/2542/8896/files/sr_bats_updated_logo_1_180x.png?v=1683140696" />
       </Head>
       <style jsx global>{`
           :root {
